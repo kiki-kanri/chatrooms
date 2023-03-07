@@ -48,13 +48,14 @@ export default defineNuxtConfig({
 		plugins: [
 			removeConsole()
 		],
-		server: {
-			hmr: {
-				clientPort: 443,
-				path: '/hmrws',
-				port: 12101,
-				protocol: 'wss'
-			}
-		}
+		// Custom hmr settings
+		// server: {
+		// 	hmr: {
+		// 		clientPort: 443,
+		// 		path: '/hmrws',
+		// 		port: 12101,
+		// 		protocol: 'wss'
+		// 	}
+		// }
 	}
 });
